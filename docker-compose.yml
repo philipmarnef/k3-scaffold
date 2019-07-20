@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  web:
+    container_name: k3_web
+    image: nginx:latest
+    ports:
+      - "4000:80"
+    volumes:
+      - ./docker/webserver/default.conf:/etc/nginx/conf.d/default.conf
+      - ./html:/var/www/html
+    links:
+      - php
+  php:
+    container_name: k3_php
+    image: php:fpm
+    volumes:
+      - ./html:/var/www/html
