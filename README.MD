@@ -1,10 +1,10 @@
 # KIRBY 3 boilerplate
 
-This is a Kirby 3 local development scaffolding. It uses:
+This is a minimal Kirby 3 local development scaffolding. It uses:
 
-- docker to fire up an nginx/php-fpm web server
-- parcel to transform css & js assets
-- browser-sync to automatically reload your site when files are changed
+- [Docker](https://www.docker.com/) start a web server with [nginx](https://nginx.org/) & [php-fpm](https://php-fpm.org/)
+- [Parcel](https://parceljs.org/) to transform css & js assets, including [Babel](https://babeljs.io/) and [postcss-preset-env](https://preset-env.cssdb.org/)
+- [browser-sync](https://www.browsersync.io/) to automatically reload your site when files are changed
 
 ### Requirements
 This setup requires:
@@ -32,7 +32,7 @@ npm run serve
 
 This starts a docker server instance at `localhost:4000`, then a browser-sync proxy at `localhost:3000` to automatically reload the browser on file changes.
 
-To stop, run  
+To stop the server, hit `[ctrl] + c`, then do  
 ```
 npm run stop
 ```

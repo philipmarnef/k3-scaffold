@@ -16,3 +16,4 @@ services:
     image: php:fpm
     volumes:
       - ./html:/var/www/html
+      - ./docker/webserver/log.conf:/usr/local/etc/php-fpm.d/zz-log.conf

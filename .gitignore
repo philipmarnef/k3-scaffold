@@ -21,6 +21,7 @@ sublime*
 .idea*
 *.sass-cache*
 rev-manifest.json
+.cache
 
 # Inore kirby cms
 html/public/kirby
