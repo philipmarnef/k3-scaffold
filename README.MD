@@ -16,7 +16,7 @@ This setup requires:
 ### Installation
 Clone this repo, then from the root run the following commands:
 
-```
+```sh
  # Install node modules:
  npm install
 
@@ -24,26 +24,38 @@ Clone this repo, then from the root run the following commands:
  composer create-project getkirby/plainkit html/public
 ```
 
+Post installation, create a file named `config.localhost.php` and add it to `html/public/site/config` to make sure all your local urls are correct:
+```php
+<?php
+
+return [
+  'debug' => true,
+  'url' => 'http://localhost:4000',
+];
+
+?>
+```
+
 ### Boot the dev environment
 To start your local dev enviroment, run  
-```
+```sh
 npm run serve
 ```
 
 This starts a docker server instance at `localhost:4000`, then a browser-sync proxy at `localhost:3000` to automatically reload the browser on file changes.
 
 To stop the server, hit `[ctrl] + c`, then do  
-```
+```sh
 npm run stop
 ```
 or  
-```
+```sh
 docker-compose down
 ```
 
 ### Build for production
 To build your assets for production:  
-```
+```sh
 npm run build
 ```
 
