@@ -23,8 +23,13 @@ sublime*
 rev-manifest.json
 .cache
 
+# Ignore config info
+.env
+.ENV
+
 # Inore kirby cms
 html/public/kirby
+html/public/vendor
 
 # Ignore content
 html/public/content
