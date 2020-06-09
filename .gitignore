@@ -27,9 +27,5 @@ rev-manifest.json
 .env
 .ENV
 
-# Inore kirby cms
-html/public/kirby
-html/public/vendor
-
 # Ignore content
-html/public/content
+html/content
