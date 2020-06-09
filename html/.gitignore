@@ -1,0 +1,23 @@
+# Temporary files
+# ---------------
+
+public/media/*
+!public/media/index.html
+
+# Lock files
+# ---------------
+.lock
+
+# Storage
+# ---------------
+
+storage/accounts/*
+storage/cache/*
+storage/sessions/*
+!storage/accounts/index.html
+!storage/cache/index.html
+!storage/sessions/index.html
+
+# License
+# ---------------
+site/config/.license

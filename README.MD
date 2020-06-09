@@ -1,9 +1,8 @@
 # KIRBY 3 scaffold
 
-This is a minimal Kirby 3 local development scaffolding. It uses:
+This is a minimal Kirby 3 local development scaffolding.
 
-- [Docker](https://www.docker.com/) to run a web server with [nginx](https://nginx.org/) & [php-fpm](https://php-fpm.org/)
-- [Parcel](https://parceljs.org/) to transform css & js assets, including [Babel](https://babeljs.io/) and [postcss-preset-env](https://preset-env.cssdb.org/)
+- [Gulp](https://gulpjs.com/) to transform css & js assets, including  [Webpack](https://webpack.js.org/), [Babel](https://babeljs.io/) and [postcss-preset-env](https://preset-env.cssdb.org/)
 - [browser-sync](https://www.browsersync.io/) to automatically reload your site when files are changed
 
 ### Requirements
@@ -12,53 +11,34 @@ This setup requires:
 
 - [node & npm](https://nodejs.org/en/)
 - [composer](https://getcomposer.org/download/)
-- [docker](https://www.docker.com/products/docker-desktop)
+- A server running [Nginx](https://nginx.com) with root set to `html/public`. If you want to use Apache instead, download the [.htaccess file](https://github.com/getkirby/plainkit/blob/master/.htaccess) from the Kirby plainkit and put it in `html/public`
 
 ### Installation
 
-Clone this repo, then from the root run the following commands:
+Clone this repo, then from your project folder run the following commands:
 
 ```sh
  # Install node modules:
  npm install
 
- # Download the Kirby 3 plainkit:
- composer create-project getkirby/plainkit html/public
+ # Install Kirby:
+ cd html
+ composer install
 ```
 
-Post installation, create a file named `config.localhost.php` in `html/public/site/config` and add the following to enable debugging mode and to make sure all your local urls are correct:
+Edit the `baseUrl` in `gulpfile.esm.js` to the url your local site is running on, like `http://my-site.test` or `http://localhost:4000`.
 
-```php
-<?php
+### Watch files
 
-return [
-  'debug' => true,
-  'url' => 'http://localhost:4000',
-];
-
-```
-
-### Boot the dev environment
-
-To start your local dev enviroment, run
+To start watching, run the watch task from the root directory:
 
 ```sh
-npm run serve
+npm run watch
 ```
 
-This starts a docker server instance at `localhost:4000`, then a browser-sync proxy at `localhost:3000` to automatically reload the browser on file changes.
+This will run gulp in watch mode, proxying the server via `localhost:3000` and reloading on any relevant file changes. 
 
-To stop the server, hit `[ctrl] + c`, then do
-
-```sh
-npm run stop
-```
-
-or  
-
-```sh
-docker-compose down
-```
+See `gulpfile.esm.js` for details.
 
 ### Build for production
 
@@ -69,4 +49,3 @@ npm run build
 ```
 
 This removes sourcemaps and minifies the assets.
-	
