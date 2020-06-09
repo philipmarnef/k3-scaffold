@@ -103,10 +103,7 @@ function watch () {
   gulp.watch('./src/css/**/*', css);
   gulp.watch('./src/js/**/*', js);
   gulp.watch([
-    './html/site/**/*', 
-    '!./html/site/accounts/**/*', 
-    '!./html/site/cache/**/*',
-    '!./html/site/sessions/**/*'
+    './html/site/**/*',
   ]).on('change', browserSync.reload);
 }
 
