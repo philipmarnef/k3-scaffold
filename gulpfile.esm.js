@@ -4,9 +4,7 @@ import image              from    'gulp-image';
 import sourcemaps         from    'gulp-sourcemaps';
 import postcss            from    'gulp-postcss';
 import postcssEasyImport  from    'postcss-easy-import';
-import postcssPresetEnv   from    'postcss-preset-env';
-import postcssCustomMedia from    'postcss-custom-media';
-import cssnano            from    'cssnano';
+import tailwind           from    'tailwindcss';
 import browserSync        from    'browser-sync';
 import webpack            from    'webpack-stream';
 
@@ -15,13 +13,9 @@ const forProduction = process.env.NODE_ENV === 'production';
 const baseUrl = 'http://k3-scaffold.test';
 
 let postcssPlugins = [
-  postcssEasyImport({ prefix: '_'}),
-  postcssCustomMedia(),
-  postcssPresetEnv()
+  postcssEasyImport(),
+  tailwind()
 ];
-if (forProduction) {
-  postcssPlugins.push(cssnano());
-}
 
 export function clean () {
   return del([
