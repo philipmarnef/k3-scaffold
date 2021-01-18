@@ -1,0 +1,6 @@
+title: Image
+accept:
+  mime: image/*
+
+fields:
+  imagedata: fields/imagedata

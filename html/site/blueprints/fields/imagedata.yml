@@ -1,0 +1,12 @@
+type: group
+fields:
+  alt:
+    label: Alt tag
+    type: text
+    width: 1/2
+    help: The alt tag is shown when the image can't be found and is read by screen readers and search bots. It is important for SEO and accessibility and should not be omitted.
+  title:
+    label: Copyright
+    type: text
+    default: ©
+    width: 1/2

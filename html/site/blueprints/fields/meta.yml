@@ -1,0 +1,12 @@
+type: group
+fields:
+  author:
+    label: Author
+    type: users
+    multiple: false
+    required: true
+  published:
+    label: Publication date
+    type: date
+    default: today
+    required: true
