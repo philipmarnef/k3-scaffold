@@ -1,4 +1,4 @@
-# Ignore OS files
+# OS files
 .DS_Store
 .DS_Store?
 ._*
@@ -7,13 +7,13 @@
 ehthumbs.db
 Thumbs.db
 
-# Ignore packages
+# Packages
 bin
 vendor
 node_modules
 bower_components
 
-# Ignore temp build tool stuff
+# Tooling & server config
 /sftp-config.json
 /php.ini
 .sublime*
@@ -23,9 +23,24 @@ sublime*
 rev-manifest.json
 .cache
 
-# Ignore config info
+# Credentials
 .env
 .ENV
 
+# License
+html/site/config/.license
+
 # Ignore content
 html/content
+html/public/media
+
+# Ignore storage
+html/storage/accounts/*
+html/storage/cache/*
+html/storage/sessions/*
+!html/storage/accounts/index.html
+!html/storage/cache/index.html
+!html/storage/sessions/index.html
+
+# Ignore built assets
+html/public/assets
