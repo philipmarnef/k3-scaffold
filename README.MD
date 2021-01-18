@@ -2,7 +2,8 @@
 
 This is a minimal Kirby 3 local development scaffolding.
 
-- [Gulp](https://gulpjs.com/) to transform css & js assets, including  [Webpack](https://webpack.js.org/), [Babel](https://babeljs.io/) and [postcss-preset-env](https://preset-env.cssdb.org/)
+- [Gulp](https://gulpjs.com/) to transform css & js assets, including  [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/)
+- [TailwindCSS](https://tailwindcss.com/) as a CSS framework to speed up development
 - [browser-sync](https://www.browsersync.io/) to automatically reload your site when files are changed
 
 ### Requirements
