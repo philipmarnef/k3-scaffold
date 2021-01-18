@@ -16,7 +16,14 @@ This setup requires:
 
 ### Installation
 
-Clone this repo, then from your project folder run the following commands:
+Clone this repo:
+
+```sh
+
+git clone git@github.com:philipmarnef/k3-scaffold.git <project-folder>
+```
+
+Then from your project folder run the following commands:
 
 ```sh
  # Install node modules:
