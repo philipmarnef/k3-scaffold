@@ -30,11 +30,11 @@ rev-manifest.json
 # License
 html/site/config/.license
 
-# Ignore content
+# Content
 html/content
 html/public/media
 
-# Ignore storage
+# Storage
 html/storage/accounts/*
 html/storage/cache/*
 html/storage/sessions/*
@@ -42,5 +42,8 @@ html/storage/sessions/*
 !html/storage/cache/index.html
 !html/storage/sessions/index.html
 
-# Ignore built assets
+# Built assets
 html/public/assets
+
+# Third party plugins
+html/site/plugins/*
