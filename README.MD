@@ -34,6 +34,8 @@ Then from your project folder run the following commands:
  composer install
 ```
 
+Run the Kirby installer at `http://my-site.test/panel`.
+
 Edit the `baseUrl` in `gulpfile.esm.js` to the url your local site is running on, like `http://my-site.test` or `http://localhost:4000`.
 
 ### Watch files
