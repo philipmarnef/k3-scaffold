@@ -20,7 +20,7 @@ Clone this repo:
 
 ```sh
 
-git clone https://github.com/philipmarnef/k3-scaffold.git <project-folder>
+git clone https://github.com/philipmarnef/k3-scaffold.git --depth 1 <project-folder>
 ```
 
 Then from your project folder run the following commands:
