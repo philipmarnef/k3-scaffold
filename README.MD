@@ -40,13 +40,13 @@ Edit the `baseUrl` in `gulpfile.esm.js` to the url your local site is running on
 
 ### Watch files
 
-To start watching, run the watch task from the root directory:
+To start watching, run the `serve` task from the root directory:
 
 ```sh
-npm run watch
+npm run serve
 ```
 
-This will run gulp in watch mode, proxying the server via `localhost:3000` and reloading on any relevant file changes. 
+This will start a proxy server with browsersync at `localhost:3000`, refreshing the browser page on file changes.
 
 See `gulpfile.esm.js` for details.
 
