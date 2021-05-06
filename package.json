@@ -10,6 +10,10 @@
   "keywords": [],
   "author": "Philip Marnef",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philipmarnef/k3-scaffold"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
@@ -26,6 +30,7 @@
     "postcss": "^8.2.4",
     "postcss-easy-import": "^3.0.0",
     "tailwindcss": "^2.0.2",
+    "webpack": "^5.36.2",
     "webpack-stream": "^5.2.1"
   }
 }
