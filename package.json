@@ -27,7 +27,7 @@
     "gulp-image": "^6.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-sourcemaps": "^2.6.5",
-    "postcss": "^8.2.4",
+    "postcss": "^8.2.10",
     "postcss-easy-import": "^3.0.0",
     "tailwindcss": "^2.0.2",
     "webpack": "^5.36.2",
