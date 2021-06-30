@@ -1,6 +1,8 @@
 title: Image
 accept:
   mime: image/*
+# maximum 25Mb
+  maxsize: 26214400
 
 fields:
   imagedata: fields/imagedata
