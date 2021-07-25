@@ -94,11 +94,12 @@ function watch () {
     },
     open: false
   });
-  gulp.watch('./src/css/**/*', css);
-  gulp.watch('./src/js/**/*', js);
+  gulp.watch('./src/css/**/*', {usePolling: true}, css);
+  gulp.watch('./src/js/**/*', {usePolling: true}, js);
   gulp.watch([
-    './html/site/**/*',
-  ]).on('change', browserSync.reload);
+    './html/site/**/*.php',
+    './html/site/**/*.yml',
+  ], {usePolling: true}).on('change', browserSync.reload);
 }
 
 export const build = gulp.series(gulp.parallel(clean, images), gulp.parallel(css,js));
