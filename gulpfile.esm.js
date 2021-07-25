@@ -102,6 +102,6 @@ function watch () {
 }
 
 export const build = gulp.series(gulp.parallel(clean, images), gulp.parallel(css,js));
-export const serve = gulp.series(build, watch)
+export const serve = gulp.series(gulp.parallel(css,js), watch)
 
 export default serve;
