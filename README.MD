@@ -34,9 +34,12 @@ Then from your project folder run the following commands:
  composer install
 ```
 
-Run the Kirby installer at `http://my-site.test/panel`.
+- update the package.json file with your project info
+- Edit the `baseUrl` in `gulpfile.esm.js` to the url your local site is running on, like `http://my-site.test` or `http://localhost:4000`.
+- rename the `config.k3-scaffold.test.php` file to `config.my-site.test.php`
+- update the 'robots' conditional in `snippets/head.php` to the production url
+- Run the Kirby installer at `http://my-site.test/panel`.
 
-Edit the `baseUrl` in `gulpfile.esm.js` to the url your local site is running on, like `http://my-site.test` or `http://localhost:4000`.
 
 ### Watch files
 
