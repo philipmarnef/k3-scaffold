@@ -94,10 +94,13 @@ function watch () {
     },
     open: false
   });
-  gulp.watch('./src/css/**/*', {usePolling: true}, css);
+  gulp.watch([
+    './tailwind.config.js',
+    './src/css/**/*',
+    './html/site/**/*.php',
+  ], {usePolling: true}, css);
   gulp.watch('./src/js/**/*', {usePolling: true}, js);
   gulp.watch([
-    './html/site/**/*.php',
     './html/site/**/*.yml',
   ], {usePolling: true}).on('change', browserSync.reload);
 }

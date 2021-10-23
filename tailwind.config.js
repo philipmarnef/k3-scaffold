@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: {
     content: [
     './html/site/**/*.php',
@@ -49,14 +50,6 @@ module.exports = {
       'auto': 'auto',
     },
     extend: {
-      screens: {
-        '2xl': '1400px',
-      },  
-      spacing: {
-        '80': '20rem',
-        '96': '24rem',
-        '128': '32rem',
-      },
     },
   },
   variants: {},
