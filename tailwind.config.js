@@ -4,8 +4,13 @@ module.exports = {
     content: [
     './html/site/**/*.php',
     ],
+    safelist: [
+      // Tailwind safelist (v3+)
+      // include classes used in panel textinputs here
+    ],
     options: {
-      whitelist: [
+      safelist: [
+        // PurgeCSS safelist (v2+)
         // include classes used in panel textinputs here
       ],
     },
