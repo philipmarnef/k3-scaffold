@@ -1,6 +1,6 @@
 title: Image
 accept:
-  mime: image/*
+  mime: image/jpeg, image/png, image/gif
 # maximum 25Mb
   maxsize: 26214400
 
