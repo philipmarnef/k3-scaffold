@@ -1,3 +1,5 @@
+<?php use Bnomei\Fingerprint; ?>
+
 <head>
 
 	<meta charset="UTF-8">
@@ -9,8 +11,7 @@
 	<meta name="robots" content="noindex,nofollow,noodp">
 <?php endif; ?>
 
-	<?= css('assets/css/main.css') ?>
-	<?= css('assets/css/print.css', 'print') ?>
-	<?= js('assets/js/main.js') ?>
+	<?= Fingerprint::css('assets/css/main.css') ?>
+	<?= Fingerprint::js('assets/js/main.js') ?>
 
 </head>
