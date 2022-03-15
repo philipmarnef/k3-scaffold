@@ -6,7 +6,7 @@ fields:
     width: 1/2
     help: The alt tag is shown when the image can't be found and is read by screen readers and search bots. It is important for SEO and accessibility and should not be omitted.
   title:
-    label: Copyright
+    label: Title (tooltip)
     type: text
-    default: ©
+    help: The title field is shown in a tooltip on mouse hover. In the absence of a caption, the title field can be used to show the image copyright holder.
     width: 1/2
