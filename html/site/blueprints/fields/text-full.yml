@@ -1,0 +1,21 @@
+type: markdown
+label:
+  en: Text
+  nl: Tekst
+size: huge
+buttons:
+  - headlines
+      - h3
+      - h4
+  - bold
+  - italic
+  - ul
+  - ol
+  - link
+  - pagelink
+  - email
+  - file
+uploads: false
+help:
+  en: This field uses <a href="https://getkirby.com/docs/guide/content/text-formatting#markdown" target="_blank">Markdown</a> and <a href="https://getkirby.com/docs/guide/content/text-formatting#kirbytext" target="_blank">KirbyTags</a> to format text
+  nl: Dit veld gebruikt <a href="https://getkirby.com/docs/guide/content/text-formatting#markdown" target="_blank">Markdown</a> en <a href="https://getkirby.com/docs/guide/content/text-formatting#kirbytext" target="_blank">KirbyTags</a> om tekst op te maken
