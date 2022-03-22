@@ -5,6 +5,7 @@ import sourcemaps         from    'gulp-sourcemaps';
 import postcss            from    'gulp-postcss';
 import postcssEasyImport  from    'postcss-easy-import';
 import tailwind           from    'tailwindcss';
+import nesting            from    'tailwindcss/nesting';
 import browserSync        from    'browser-sync';
 import webpack            from    'webpack-stream';
 
@@ -14,7 +15,8 @@ const baseUrl = 'http://k3-scaffold.test';
 
 let postcssPlugins = [
   postcssEasyImport(),
-  tailwind()
+  nesting(),
+  tailwind(),
 ];
 
 export function clean () {
