@@ -4,9 +4,9 @@ label:
   nl: Tekst
 size: huge
 buttons:
-  - headlines
-      - h3
-      - h4
+  headlines:
+    - h3
+    - h4
   - bold
   - italic
   - ul
