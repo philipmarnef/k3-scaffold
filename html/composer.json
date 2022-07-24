@@ -2,7 +2,7 @@
   "require": {
     "getkirby/cms": "^3.0",
     "bnomei/kirby3-fingerprint": "^3.1",
-    "k-community/markdown-field": "2.0.0-rc1"
+    "k-community/markdown-field": "2.0.1"
   },
   "config": {
     "optimize-autoloader": true

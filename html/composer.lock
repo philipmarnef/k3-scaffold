@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bf32b67f8ad10743c2177c523eebf76",
+    "content-hash": "cbebcaf38ef978ddbede6840404ccadc",
     "packages": [
         {
             "name": "bnomei/kirby3-fingerprint",
@@ -359,22 +359,22 @@
         },
         {
             "name": "k-community/markdown-field",
-            "version": "2.0.0-rc1",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabianmichael/kirby-markdown-field.git",
-                "reference": "27cd2f908c6e6126cc964a60ae5b04033897e189"
+                "reference": "ad53d129974dbe74439c7f6f8666791bbfc37954"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabianmichael/kirby-markdown-field/zipball/27cd2f908c6e6126cc964a60ae5b04033897e189",
-                "reference": "27cd2f908c6e6126cc964a60ae5b04033897e189",
+                "url": "https://api.github.com/repos/fabianmichael/kirby-markdown-field/zipball/ad53d129974dbe74439c7f6f8666791bbfc37954",
+                "reference": "ad53d129974dbe74439c7f6f8666791bbfc37954",
                 "shasum": ""
             },
             "require": {
                 "getkirby/cms": ">=3.6.0",
                 "getkirby/composer-installer": "^1.2",
-                "php": ">=7.4.0"
+                "php": ">=8.0.0"
             },
             "type": "kirby-plugin",
             "extra": {
@@ -397,9 +397,15 @@
             "description": "Enhanced markdown editor for Kirby 3",
             "support": {
                 "issues": "https://github.com/fabianmichael/kirby-markdown-field/issues",
-                "source": "https://github.com/fabianmichael/kirby-markdown-field/tree/2.0.0-rc1"
+                "source": "https://github.com/fabianmichael/kirby-markdown-field/tree/2.0.1"
             },
-            "time": "2022-01-13T14:54:12+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/fabianmichael",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-07-01T13:46:35+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -961,9 +967,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "k-community/markdown-field": 5
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
