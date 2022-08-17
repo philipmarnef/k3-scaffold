@@ -5,4 +5,5 @@ accept:
   maxsize: 26214400
 
 fields:
-  imagedata: fields/imagedata
+  imagedata: 
+    extends: fields/imagedata
