@@ -2,10 +2,15 @@
   "name": "k3-scaffold",
   "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.php",
   "scripts": {
     "serve": "npx gulp serve",
-    "build": "NODE_ENV=production npx gulp build"
+    "build": "NODE_ENV=production npx gulp build",
+    "push": "rsync -avhi html/ root@example.com:/var/www/example.com/html --chown=www-data:www-data --exclude-from=.rsync-push-exclude --delete",
+    "pull-content": "rsync -avhi root@example.com:/var/www/example.com/html/content/ html/content --exclude=.DS_Store --exclude=.lock --delete",
+    "push-staging": "rsync -avhi html/ root@staging.example.com:/var/www/staging.example.com/html --chown=www-data:www-data --exclude-from=.rsync-push-exclude --delete",
+    "push-content-staging": "rsync -avhi html/content/ root@staging.example.com:/var/www/staging.example.com/html/content --chown=www-data:www-data --delete",
+    "pull-content-staging": "rsync -avhi root@staging.example.com:/var/www/staging.example.com/html/content/ html/content --exclude=.DS_Store --exclude=.lock --delete"
   },
   "keywords": [],
   "author": "Philip Marnef",

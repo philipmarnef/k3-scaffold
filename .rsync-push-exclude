@@ -1,0 +1,7 @@
+.DS_Store
+.cache
+.env
+.license
+content
+storage
+public/media
