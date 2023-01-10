@@ -1,7 +1,35 @@
-title: Default Page
-preset: page
-fields:
-  text:
-    label: Text
-    type: textarea
-    size: large
+title: 
+  en: Default Page
+  nl: Gewone Pagina
+
+tabs:
+# tab
+  fields:
+    label:
+      en: Fields
+      nl: Velden
+    icon: text
+    columns:
+    # column
+      main:
+        width: 2/3
+        sections:
+        # section
+          fields:
+            type: fields
+            fields:
+              text:
+                extends: fields/text-full
+    # column
+      meta:
+        width: 1/3
+        sections:
+        # section
+          meta:
+            type: fields
+            fields:
+              meta:
+                extends: fields/meta
+
+# tab
+  media: tabs/media
