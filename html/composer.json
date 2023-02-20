@@ -2,7 +2,8 @@
   "require": {
     "getkirby/cms": "^3.0",
     "bnomei/kirby3-fingerprint": "^3.1",
-    "fabianmichael/kirby-markdown-field": "^2.1"
+    "fabianmichael/kirby-markdown-field": "^2.1",
+    "johannschopplich/kirbylog": "^1.4"
   },
   "config": {
     "optimize-autoloader": true
