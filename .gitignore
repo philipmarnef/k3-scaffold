@@ -47,3 +47,4 @@ html/public/assets
 
 # Third party plugins
 html/site/plugins/*
+!html/site/plugins/seo

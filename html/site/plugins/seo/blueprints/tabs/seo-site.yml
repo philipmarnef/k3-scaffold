@@ -1,0 +1,41 @@
+label: SEO
+icon: search
+columns:
+# column
+  seo:
+    width: 2/3
+    sections:
+    # section
+      seo:
+        type: fields
+        fields:
+          seo_description: fields/seo-description
+          twitter_username:
+                type: text
+                label:
+                  en: Twitter username
+                  nl: Twitter gebruikersnaam
+                  fr: Nom d'utilisateur Twitter
+                before: '@'
+                help:
+                  en: For sharing pages on Twitter
+                  nl: Voor het delen van pagina's op Twitter
+                  fr: Pour partager des pages sur Twitter
+                width: 1/2
+# column
+  seo_image:
+    width: 1/3
+    sections:
+    # section
+      seo_image:
+        type: fields
+        fields:
+          seo_image: fields/seo-image
+    # section
+      seo_uploads:
+        headline:
+          nl: Beschikbare afbeeldingen
+          en: Available images
+          fr: Images disponibles
+        type: files
+        template: image
