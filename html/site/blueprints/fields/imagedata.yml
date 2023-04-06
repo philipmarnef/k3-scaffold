@@ -4,17 +4,21 @@ fields:
     label:
       nl: Alt tekst
       en: Alt text
+      fr: Texte « Alt »
     type: text
     width: 1/2
     help:
       nl: Beschrijving van de afbeelding. Wordt weergegeven wanneer de afbeelding niet kan geladen worden en uitgelezen door zoekrobots of voorlees-software.
       en: Description of the image. Is displayed when the image cannot be displayed (yet) and is read by search engines and assistive software.
+      fr: Description de l'image. S'affiche lorsque l'image ne peut pas (encore) être affichée et est lue par les moteurs de recherche et les logiciels d'assistance.
   title:
     label: 
       nl: Muishint
       en: Tooltip
+      fr: Info-bulle
     type: text
     width: 1/2
     help:
       nl: Deze tekst wordt weergegeven als hintvenster wanneer je de muiscursor over de afbeelding houdt.
       en: This text is displayed as a tooltip when hovering over the image with a mouse.
+      fr: Ce texte est affiché sous forme d'infobulle lorsque l'on survole l'image avec la souris.

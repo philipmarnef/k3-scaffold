@@ -13,13 +13,13 @@ columns:
           twitter_username:
                 type: text
                 label:
-                  en: Twitter username
                   nl: Twitter gebruikersnaam
+                  en: Twitter username
                   fr: Nom d'utilisateur Twitter
                 before: '@'
                 help:
-                  en: For sharing pages on Twitter
                   nl: Voor het delen van pagina's op Twitter
+                  en: For sharing pages on Twitter
                   fr: Pour partager des pages sur Twitter
                 width: 1/2
 # column

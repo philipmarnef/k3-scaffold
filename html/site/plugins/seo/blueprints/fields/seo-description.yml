@@ -1,12 +1,12 @@
 label:
-  en: Description
   nl: Samenvatting
+  en: Description
   fr: Résumé
 type: markdown
 buttons: false
 size: small
 maxlength: 160
 help:
-  en: This text is shown on the search engine results page. Search engines abbreviate text that is too long so this field is limited to 160 characters.
   nl: Deze tekst wordt getoond op de resultaten-pagina van de zoekmachine. Zoekmachines korten tekst die te lang is in, daarom is dit veld beperkt tot 160 tekens.
+  en: This text is shown on the search engine results page. Search engines abbreviate text that is too long so this field is limited to 160 characters.
   fr: Ce texte est affiché sur la page de résultats du moteur de recherche. Les moteurs de recherche raccourcissent les textes trop longs, c'est pourquoi ce champ est limité à 160 caractères.

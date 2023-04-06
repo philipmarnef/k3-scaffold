@@ -11,6 +11,6 @@ size: small
 image:
   ratio: 1/1
 help:
-  en: The image that will be used when sharing this page on Facebook, Twitter,... Depending on the medium this image might be cropped further to a landscape format (e.g. Facebook), so make sure there's no vital information in the top or bottom of the image.
   nl: De afbeelding die gebruikt wordt wanneer je deze pagina deelt op Facebook, Twitter,... Afhankelijk van het medium wordt de afbeelding gecropt tot een liggend formaat (bijv. Facebook), zorg daarom dat er geen cruciale informatie boven of onderaan in de afbeelding zit.
+  en: The image that will be used when sharing this page on Facebook, Twitter,... Depending on the medium this image might be cropped further to a landscape format (e.g. Facebook), so make sure there's no vital information in the top or bottom of the image.
   fr: L'image utilisée lorsque vous partagez cette page sur Facebook, Twitter,... Selon le support, l'image sera recadrée au format paysage (par exemple Facebook), assurez-vous donc qu'il n'y a pas d'informations cruciales en haut ou en bas de l'image.

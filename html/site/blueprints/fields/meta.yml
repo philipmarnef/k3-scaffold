@@ -1,12 +1,18 @@
 type: group
 fields:
   author:
-    label: Author
+    label: 
+      nl: Auteur
+      en: Author
+      fr: Auteur
     type: users
     multiple: false
     required: true
   published:
-    label: Publication date
+    label: 
+      nl: Publicatiedatum
+      en: Publication date
+      fr: Date de publication
     type: date
     default: today
     required: true

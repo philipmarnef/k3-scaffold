@@ -1,13 +1,15 @@
 title: 
-  en: Default Page
   nl: Gewone Pagina
+  en: Default Page
+  fr: Page de défault
 
 tabs:
 # tab
   fields:
     label:
-      en: Fields
       nl: Velden
+      en: Fields
+      fr: Champs
     icon: text
     columns:
     # column
