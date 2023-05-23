@@ -6,6 +6,7 @@ import postcss            from    'gulp-postcss';
 import postcssEasyImport  from    'postcss-easy-import';
 import tailwind           from    'tailwindcss';
 import nesting            from    'tailwindcss/nesting';
+import autoprefixer       from    'autoprefixer';
 import browserSync        from    'browser-sync';
 import webpack            from    'webpack-stream';
 
@@ -17,6 +18,7 @@ let postcssPlugins = [
   postcssEasyImport(),
   nesting(),
   tailwind(),
+  autoprefixer(),
 ];
 
 export function clean () {
