@@ -37,3 +37,8 @@ npm install
 # install composer packages
 echo "Installing composer packages"
 (cd ./html && composer install)
+
+# replace .gitignore
+rm .gitignore
+mv .gitignore-post-install .gitignore
+echo "Updated .gitignore"

@@ -1,0 +1,45 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Packages
+bin
+vendor
+node_modules
+bower_components
+
+# Tooling & server config
+/sftp-config.json
+/php.ini
+.sublime*
+sublime*
+.idea*
+*.sass-cache*
+rev-manifest.json
+.cache
+
+# Credentials
+.env
+.ENV
+
+# License
+html/site/config/.license
+
+# Content
+html/content
+html/public/media
+
+# Storage
+html/storage
+
+# Built assets
+html/public/assets
+
+# Third party plugins
+html/site/plugins/*
+!html/site/plugins/seo
