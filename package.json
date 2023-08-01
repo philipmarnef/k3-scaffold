@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "",
   "main": "index.php",
+  "type": "module",
   "scripts": {
     "serve": "npx gulp serve",
     "build": "NODE_ENV=production npx gulp build",
@@ -27,9 +28,8 @@
     "browser-sync": "^2.28.3",
     "css-loader": "^6.4.0",
     "del": "^6.0.0",
-    "esm": "^3.2.25",
     "gulp": "^4.0.2",
-    "gulp-image": "^6.2.1",
+    "gulp-imagemin": "^8.0.0",
     "gulp-postcss": "^9.0.1",
     "gulp-sourcemaps": "^3.0.0",
     "postcss": "^8.3.11",

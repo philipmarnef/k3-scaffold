@@ -1,11 +1,11 @@
 import del                from    'del';
 import gulp               from    'gulp';
-import image              from    'gulp-image';
+import imagemin           from    'gulp-imagemin';
 import sourcemaps         from    'gulp-sourcemaps';
 import postcss            from    'gulp-postcss';
-import postcssEasyImport  from    'postcss-easy-import';
+import postcssEasyImport  from    'postcss-easy-import/index.js';
 import tailwind           from    'tailwindcss';
-import nesting            from    'tailwindcss/nesting';
+import nesting            from    'tailwindcss/nesting/index.js';
 import autoprefixer       from    'autoprefixer';
 import browserSync        from    'browser-sync';
 import webpack            from    'webpack-stream';
@@ -35,7 +35,7 @@ function cleanImages () {
 
 function imageMin () {
   return gulp.src('./src/images/*')
-    .pipe(image())
+    .pipe(imagemin())
     .pipe(gulp.dest('./html/public/assets/images'));
 }
 
