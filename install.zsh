@@ -18,10 +18,10 @@ esac
 done
 
 url="${protocol}://${domain}"
-echo "Your local development site runs at ${url}, updating gulpfile.esm.js"
+echo "Your local development site runs at ${url}, updating gulpfile.js"
 
 # set baseUrl in gulpfile
-sed -i '' "s,http://k3-scaffold.test,${url},g" gulpfile.esm.js
+sed -i '' "s,http://k3-scaffold.test,${url},g" gulpfile.js
 
 # get the production domain
 vared -p "What is the production domain? " -c production
