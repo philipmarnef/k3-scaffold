@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?= $kirby->languageCode() ?>">
+<html lang="<?= $kirby->languageCode() ?? 'en' ?>">
 <?= snippet('head') ?>
 
 <body>
