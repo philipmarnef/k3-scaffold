@@ -16,8 +16,7 @@ bower_components
 # Tooling & server config
 /sftp-config.json
 /php.ini
-.sublime*
-sublime*
+.vscode
 .idea*
 *.sass-cache*
 rev-manifest.json
