@@ -42,3 +42,6 @@ echo "Installing composer packages"
 rm .gitignore
 mv .gitignore-post-install .gitignore
 echo "Updated .gitignore"
+
+# initialize a git repo
+git init
